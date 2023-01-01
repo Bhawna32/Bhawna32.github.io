@@ -1,0 +1,130 @@
+
+.navbar div{
+    display: flex;
+   
+}
+  .navbar *{
+  font-family: "Volte", sans-serif!important;
+  
+  }
+.navbar{
+background-color:rgb(205, 229, 238) ;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    flex:1;
+   animation:risein .3s linear;
+   z-index: 14;
+    
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125em;
+    font-weight: 700;
+    width: 100%;
+    padding: 0 2em;
+   
+}
+.navlink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: #fff;
+}
+.navlink>P{
+    padding: 5px;
+    font-size: 1em;
+    background: linear-gradient(to right,rgb(166, 178, 247) ,rgb(243, 205, 209));
+    background-clip: text;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 30s ease infinite;
+
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em .25em;
+    cursor: pointer;
+    color: rgb(19,14,77);
+    text-decoration: none;
+}
+.navlink:hover {
+
+    background: rgb(196,107,233);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0px 0px;
+    }
+    50% {
+        background-position: 250px 0px;
+    }
+
+  
+    100% {
+        background-position: 500px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+   .navbar{
+    
+    display: none;
+   }
+
+  }
+
+
+@keyframes risein{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.hidden{
+
+ display: none;
+  
+}
+.blur{
+ background: transparent;
+
+    backdrop-filter: blur(7px);
+    box-shadow: rgba(4, 7, 13, 0.25) 0px 5px 5px, rgba(74, 75, 76, 0.13) 0px 0px 6px 6px;
+    z-index: 9;
+}
+
+.logo{
+    width: 5rem;
+    margin-left: 2.5rem;
+    aspect-ratio: 1;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(19,14,77);
+}
+.logo p{
+
+    margin: 0;
+}

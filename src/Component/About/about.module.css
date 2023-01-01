@@ -1,0 +1,131 @@
+.introp{
+    font-size: 1.6em;
+    color: #484848;
+    
+    letter-spacing: .25em;
+}
+*{
+                                                
+    font-family: 'Oscine Trial', sans-serif;
+                                                                                                                                                              
+}
+.profileimg {
+    
+    width: 80% !important;
+    height: 65% !important;
+    margin-bottom: 1.25rem;
+    /* border: 1px solid red; */
+    margin-left: 1rem;
+    margin-top: 5rem;
+    border-radius:50px 105px 15px 100px;
+    border-width: 10px ;
+    border-style: solid ;
+   border-color: rgb(19,14,77);
+   padding: 10px;
+  }
+.name{
+    font-size:6rem;
+    margin: 0;
+    background: linear-gradient(to right,#9e56f1,#7539ed,#2a3aec,#8d4be4);
+    background-clip: text;
+    color: transparent;
+}
+.introhead{
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: rgb(163, 177, 255);
+    word-spacing: .25rem;
+   
+}
+.tagline{
+    font-size: 1.5em;
+    color: #484848;
+    width: 100%;
+    word-spacing: .25rem;
+
+} 
+.dbut{
+
+height: 50px;
+margin-left: 35%;
+    background-color: rgb(19,14,77);
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+    margin-top: 0.75rem;
+    outline: none;
+    color: rgb(227,250,224);
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+ .container{
+    background-color: rgb(220, 233, 251);
+    width: 50vw;
+    font-family:   Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    overflow: auto;
+    padding: 2em;
+    margin-top: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    animation: fade 8s;
+   
+} 
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
+.canvas{
+    
+    width: 30vw;
+    margin-top: 18vh;
+   
+    
+}
+
+
+/* .cv_button{
+    width: 50px;
+    height: 30px;
+    margin-left: 30%;
+    margin-left: 30%;
+    background-color: rgb(19,14,77);
+
+  border: none;
+  padding: 12px 15px;
+  font-size: 18px;
+  margin-top: 0.75rem;
+  outline: none;
+  color: #fff;
+} */
+.flexbox{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    padding: 0 10vw;
+    background-color: rgb(220, 233, 251);
+}
+
+    
+@media screen and (max-width: 700px)
+{
+    .canvas{
+        display: none;
+    }
+    .introp{font-size: 1.2em;}
+    .name{
+        font-size:3.1em;
+    }
+    .introhead{
+        font-size:2.1em ;
+    }
+    .tagline{ font-size: 1.2em;}
+}
